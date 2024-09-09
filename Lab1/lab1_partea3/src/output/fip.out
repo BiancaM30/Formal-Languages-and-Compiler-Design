@@ -1,0 +1,61 @@
+Tabel constante
+Key = 7, poz = 0
+Key = 11, poz = 1
+Key = 30, poz = 2
+Key = 55, poz = 3
+
+
+Tabel identificatori
+Key = a1, poz = 0
+Key = a2, poz = 1
+Key = a3, poz = 2
+Key = f, poz = 3
+
+
+Forma interna a programului
+Cod atom    Cod TS
+2            
+3            
+0            1
+32            
+0            2
+32            
+0            3
+32            
+0            4
+34            
+0            1
+12            
+1            1
+34            
+0            2
+12            
+1            2
+34            
+0            3
+12            
+0            1
+13            
+0            2
+13            
+1            3
+34            
+0            4
+12            
+1            4
+34            
+0            4
+12            
+0            4
+13            
+1            3
+34            
+9            
+28            
+0            3
+29            
+34            
+27            
+27            
+27            
+27            

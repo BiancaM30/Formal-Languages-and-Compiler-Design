@@ -1,0 +1,14 @@
+public class Main { public static void main(String[] args) {Scanner in = new Scanner(System.in);
+	int a, b;
+	a = in.nextInt();
+	b = in.nextInt();
+	while ( a != b ){
+		if (a > b) {
+			a = a - b;
+		}
+		else {
+			b = b - a;
+		}
+	}
+	System.out.println ( a );
+}}

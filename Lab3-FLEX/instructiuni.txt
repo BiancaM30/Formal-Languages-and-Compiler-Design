@@ -1,0 +1,2 @@
+trebuie rulat in folderul users (altfel da eroare la gcc
+)

@@ -1,0 +1,17 @@
+public class Main { public static void main(String[] args) {Scanner in = new Scanner(System.in);
+    int a,b,i;
+    double p;
+    a=in.nextInt();
+    b=a+2;
+    i=200;
+    while(i>0 && a>=0){
+        if(a==b || a>10){
+            System.out.println(a);
+        }
+        else{
+            a=a+2;
+        }
+       System.out.println(a);
+       i=i/10;
+    }
+}}

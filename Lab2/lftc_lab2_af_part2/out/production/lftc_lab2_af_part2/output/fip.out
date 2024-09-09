@@ -1,0 +1,63 @@
+Tabel constante
+Key = 0b101111, stanga = 2.0, dreapta= 3.0
+Key = -11, stanga = -1.0, dreapta= -1.0
+Key = 0xA, stanga = -1.0, dreapta= 4.0
+Key = 5, stanga = 5.0, dreapta= -1.0
+Key = 3.5, stanga = -1.0, dreapta= -1.0
+
+
+Tabel identificatori
+Key = vAR, stanga = 2.0, dreapta= -1.0
+Key = a1, stanga = 3.0, dreapta= -1.0
+Key = _a2, stanga = 4.0, dreapta= -1.0
+Key = $a3, stanga = -1.0, dreapta= 5.0
+Key = VaR, stanga = -1.0, dreapta= -1.0
+
+
+Forma interna a programului
+Cod atom    Cod TS
+2.0            
+3.0            
+0.0            1.0
+32.0            
+0.0            2.0
+32.0            
+0.0            3.0
+32.0            
+0.0            4.0
+34.0            
+0.0            2.0
+12.0            
+1.0            
+34.0            
+0.0            3.0
+12.0            
+1.0            2.0
+34.0            
+0.0            4.0
+12.0            
+0.0            2.0
+13.0            
+0.0            3.0
+13.0            
+1.0            3.0
+34.0            
+0.0            1.0
+12.0            
+1.0            4.0
+34.0            
+0.0            5.0
+12.0            
+0.0            1.0
+13.0            
+1.0            5.0
+34.0            
+9.0            
+28.0            
+0.0            4.0
+29.0            
+34.0            
+27.0            
+27.0            
+27.0            
+27.0            

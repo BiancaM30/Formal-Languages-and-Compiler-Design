@@ -1,0 +1,111 @@
+1. Specificarea minilimbajului de programare (MLP).
+
+<program> 		  -> public class Main { public static void main(String[] args) {Scanner in = new Scanner(System.in);
+							<lista_declaratii> | <lista_instr>
+					}}
+
+<lista_declaratii>   -> <declaratie> | <declaratie> ; <lista_declaratii>	
+<declaratie> 		  -> <tip> <lista_id>		
+<lista_id>         	  -> <ID> | <ID> , <lista-decl-var>
+<tip>			  -> int | float
+
+															<lista_declaratii> <lista_instr> } }
+<lista_instr>     	  -> <instr> | <instr> <lista_instr>
+<instr>			  -> <instr_IO> | <instr_atribuire> | <instr_conditionala> | <instr_ciclare>
+
+<instr_IO>		  -> <citire> | <scriere>
+<citire>			  -> ID=in.next() | ID=in.nextInt() | ID=in.nextfloat() 
+<scriere> 		  -> System.out.println(ID);
+
+<instr_atribuire>    -> ID = ID | INT_CONST | FLOAT_CONST | <expr> ;
+<expresie>           -> ID <op_aritmetic> ID | ID <op_aritmetic> CONST | CONST <op_aritmetic> ID
+<op_aritmetic> 	  -> + | - | * | / | %
+
+<instr_conditionala>  -> if( <lista_conditii> ){ <lista_instr> } | if( <lista_conditii> ){ <lista_instr> } 
+else { <lista_instr> } 
+<lista_conditii>	  -> conditie | conditie <op_logic> conditie
+<conditie>		  -> ID <op_relational> ID | ID <op_relational> CONST | CONST <op_relational> ID
+<op_relational> 	  -> == | != | < | > | <= | >=
+<op_logic>      	  -> "&&" | "||"
+
+<instr_ciclare>		  -> while( <lista_conditii> ){ <lista_instr> }
+
+ID: ^[a-zA-Z_$]{1}[a-zA-Z_$0-9]{,7}$
+CONST: integer | float
+
+----------------------------------------------------------------------------------------
+2. se cer textele sursa a 3 mini-programe
+
+### 2.1. calculeaza perimetrul si aria cercului de o raza data
+public class Main { public static void main(String[] args) {Scanner in = new Scanner(System.in);
+	float p, a, r;
+	r = in.nextfloat();
+	p = 2 * r;
+	p = p * 3.14;
+	a = r * r;
+	a = a * 3.14;
+	System.out.println ( p );
+	System.out.println ( a );
+}}
+
+
+### 2.2  determina cmmdc a 2 nr naturale
+public class Main { public static void main(String[] args) {Scanner in = new Scanner(System.in);
+	int a, b;
+	a = in.nextInt();
+	b = in.nextInt();
+	while ( a != b ){
+		if (a > b) {
+			a = a - b;
+		}
+		else {
+			b = b - a;
+		}
+	}
+	System.out.println ( a );
+}}
+
+### 2.3. calculeaza suma a n numere citite de la tastatura
+public class Main { 
+	public static void main(String[] args) {Scanner in = new Scanner(System.in);
+	int n, sum, contor;
+	n=in.nextInt();
+	sum = 0;
+	contor = 0;
+	while(contor<n){
+		int nr;
+		nr=in.nextInt();
+		sum = sum + nr;
+		contor = contor + 1;
+	}
+	System.out.println(sum);
+}}
+
+----------------------------------------------------------------------------------------
+3. Se cer textele sursa a doua programe care contin erori conform MLP-ului definit:
+
+### 3.1 - 2 erori atat in MLP cat si in limbajul original
+public class Main { 
+	public static void main(String[] args) {Scanner in = new Scanner(System.in);
+	int n;
+	n=in.nextInteger();          -> err
+	contor = 0;
+	while(contor<n){
+		contor = contor + 1      -> err
+	}
+	System.out.println(contor);
+}}
+
+### 3.2 - 2 erori doar in MLP
+public class Main { 
+	public static void main(String[] args) {Scanner in = new Scanner(System.in);
+	int a,b;
+	a=in.nextInt();
+	b=in.nextInt();
+	if(a>b){                                 
+		b++;					-> err  
+		System.out.println(b);
+	}
+	b *= 2; 					-> err;
+	System.out.println(b);
+}}

@@ -1,0 +1,10 @@
+public class Main { public static void main(String[] args) {Scanner in = new Scanner(System.in);
+	double p, a, r;
+	r = in.nextDouble();
+	p = 2 * r;
+	p = p * 3.14;
+	a = r * r;
+	a = a * 3.14;
+	System.out.println ( p );
+	System.out.println ( a );
+}}

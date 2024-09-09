@@ -1,0 +1,10 @@
+public class Main { public static void main(String[] args) {Scanner in = new Scanner(System.in);
+	int vAR, a1, _a2, $a3 ;
+	a1 = 0b101111 ;
+    	_a2 = -11 ;
+    	$a3 = a1 + _a2 + 0xA ;
+    	vAR = 5 ;
+    	VaR = vAR + 3.5 ;
+    	System.out.println ( $a3 ) ;
+    }}
+}}

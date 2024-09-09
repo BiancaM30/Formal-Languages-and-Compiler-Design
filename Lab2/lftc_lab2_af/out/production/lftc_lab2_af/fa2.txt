@@ -1,0 +1,14 @@
+stari
+p,q,s,t,u
+alfabet
+a,b
+tranzitii
+p,a,q
+q,b,s
+s,a,t
+t,a,u
+u,a,t
+stari finale
+s,u
+stari intiale
+p

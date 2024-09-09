@@ -1,0 +1,13 @@
+public class Main { public static void main(String[] args) {Scanner in = new Scanner(System.in);
+	int n, sum, contor ;
+	n = in.nextInt() ;
+	sum = 0 ;
+	contor = 0 ;
+	while ( contor < n ){
+		int nr ;
+		nr = in.nextInt() ;
+		sum = sum + nr ;
+		contor = contor + 1 ;
+	}
+	System.out.println ( sum ) ;
+}}

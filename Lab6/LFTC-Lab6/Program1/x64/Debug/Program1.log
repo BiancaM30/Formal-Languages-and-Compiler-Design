@@ -1,0 +1,4 @@
+﻿  Program1.cpp
+C:\Users\munte\LFTC\Lab6\LFTC-Lab6\Program1\Program1.cpp(4,6): warning C4101: 'nr': unreferenced local variable
+C:\Users\munte\LFTC\Lab6\LFTC-Lab6\Program1\Program1.cpp(4,24): warning C4101: 'n': unreferenced local variable
+  Program1.vcxproj -> C:\Users\munte\LFTC\Lab6\LFTC-Lab6\Program1\x64\Debug\Program1.exe

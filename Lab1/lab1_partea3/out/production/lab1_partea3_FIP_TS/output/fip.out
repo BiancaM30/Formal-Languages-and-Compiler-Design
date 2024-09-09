@@ -1,0 +1,61 @@
+Tabel constante
+Key = 7, stanga = -1, dreapta= 2
+Key = 11, stanga = -1, dreapta= 3
+Key = 30, stanga = -1, dreapta= 4
+Key = 55, stanga = -1, dreapta= -1
+
+
+Tabel identificatori
+Key = a1, stanga = -1, dreapta= 2
+Key = a2, stanga = -1, dreapta= 3
+Key = a3, stanga = -1, dreapta= 4
+Key = f, stanga = -1, dreapta= -1
+
+
+Forma interna a programului
+Cod atom    Cod TS
+2            
+3            
+0            1
+32            
+0            2
+32            
+0            3
+32            
+0            4
+34            
+0            1
+12            
+1            1
+34            
+0            2
+12            
+1            2
+34            
+0            3
+12            
+0            1
+13            
+0            2
+13            
+1            3
+34            
+0            4
+12            
+1            4
+34            
+0            4
+12            
+0            4
+13            
+1            3
+34            
+9            
+28            
+0            3
+29            
+34            
+27            
+27            
+27            
+27            

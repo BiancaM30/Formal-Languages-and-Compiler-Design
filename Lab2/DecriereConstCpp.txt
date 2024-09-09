@@ -1,0 +1,41 @@
+// https://en.cppreference.com/w/cpp/language/types
+
+Alfabet: + - . 0 1 2 3 4 5 6 7 8 9 x b 
+
+Multime stari: p,q,i,w,n,o,h,r,s
+p: stare initiala
+q: +-
+i: 0
+w: cifra
+n: cifra binara
+t: cifra octala
+h: cifra hexa
+r: reale
+s: zecimale
+
+Tranzitii:
+p,cifra,r
+p,op,q
+r,cifra,r
+q,cifra,r
+r,.,z
+z,cifra,z
+
+Stari finale: n,o,h,r,z
+
+Stari initiale: p
+
+BNF:
+<constanta> -> <operator> <numar> | <numar>
+<operator> -> + | -
+<numar> -> <lista_cifre> | 0b<lista_cifre_bin> | 0<lista_cifre_octa> | 0x<lista_cifre_hex> | <lista_cifre_float>
+<lista_cifre> -> <cifra> | <lista_cifre>
+<cifra> -> 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
+<lista_cifre_bin> -> <cifra_bin> | <lista_cifre_bin>
+<cifra_bin> -> 0 | 1
+<lista_cifre_octa> -> <cifra_octa> | <lista_cifre_octa>
+<cifra_octa> -> 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7
+<lista_cifre_hex> -> <cifra_hex> | <lista_cifre_hex>
+<cifra_hex> -> 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | a | b | c | d | e | f
+<lista_cifre_float> -> <lista_cifre> | <lista_cifre>.<lista_cifre>
+

@@ -1,0 +1,17 @@
+<fisier> -> stari <stari> alfabet <alfabet> tranzitii <tranzitii> stari initiale <stare_initiala> stari finale <stare_finala>
+	 
+<stari> -> <lista_stari>
+<lista_stari> -> <stare> , <lista_stari>
+<stare> -> a|b|...|z
+
+<alfabet> -> <lista_caractere>
+<lista_caractere> -> <caracter> , <lista_caractere>
+<caracter> -> +|-|0|1|...|9|a|b|...|z|A|B|...|Z
+
+<tranzitii> -> <lista_tranzitii>
+<lista_tranzitii> -> <tranzitie> | <lista_tranzitii>
+<tranzitie> -> <stare_initiala> , <input> , <stare_finala>
+<input> -> <caracter>
+<stare_initiala> -> <stare>
+<stare_finala> -> <stare>
+

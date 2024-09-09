@@ -1,0 +1,10 @@
+public class Main { public static void main(String[] args) {Scanner in = new Scanner(System.in);
+	int a1, a2, a3, f ;
+	a1 = 7 ;
+    	a2 = 11 ;
+    	a3 = a1 + a2 + 30 ;
+    	f = 55 ;
+    	f = f + 30 ;
+    	System.out.println ( a3 ) ;
+    }}
+}}
